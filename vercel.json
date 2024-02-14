@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    {"source": "/(.*)", "destination": "http://bbs.yuhuangonly.com/index.php"}
+    {"source": "/(.*)", "destination": "http://bbs.yuhuangonly.com/$1"}
   ]
 }
