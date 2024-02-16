@@ -2,15 +2,10 @@
   "rewrites": [
     {"source": "/(.*)", "destination": "http://bbs.yuhuangonly.com/$1"}
   ],
-  "headers": [
+  "middleware": [
     {
       "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Referrer-Policy",
-          "value": "no-referrer-when-downgrade"
-        }
-      ]
+      "middlewarePath": "/middleware.js"
     }
   ]
 }
